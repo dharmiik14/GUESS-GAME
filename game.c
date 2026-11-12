@@ -1,37 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int secret=25;
-    int guess ;
-    int attempt= 0;
-     printf("======== NUMBER GUESSING GAME ==========\n");
-     printf ("guess the number between 1 to 50 :");
-     scanf("%d",& guess);
-    
-    
-    
-while(guess!= secret)
-{
-    attempt++ ;
-    if (guess> secret)
+    int a= 0 , b=1 ,c, x;
+    printf(" enter the num");
+    scanf(" %d", & x);
+    for( int i= 1; i<= x; i++)
     {
-        printf (" too high! try again.\n");
+        printf("%d\n",a);
+        c=a+b;
+        a=b;
+        b=c;
+
     }
-        else
-        {
-        printf ("too low !try again. \n"); 
 
-        }
-        printf("\n guess the number between 1 and 50:");
-        scanf("%d",& guess);
-}
- 
-attempt++;
+return 0;
 
-printf ("\n congratulation! you guess the correct number .\n");
-printf("total attempt: %d\n", attempt);
-   
-
-printf(" ======= GAME OVER ==========");
- return 0 ;
 }
